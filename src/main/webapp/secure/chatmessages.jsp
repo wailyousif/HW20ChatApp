@@ -167,7 +167,7 @@
                         <a href="/secure/chatmsgs/show?page=<c:out value="${listOfChatMsgs.number - 1}"/>&msgBoardId=<c:out value="${msgBoardId}"/>&msgBoardName=<c:out value="${msgBoardName}"/>&pageSize=<c:out value="${pageSizeVal}"/>&sortBy=<c:out value="${sortByVal}"/>">Previous Page <</a>
                     </c:if>
                 </div>
-                <form id="frmOptions" method="get">
+                <form id="frmOptions" method="get" action="/secure/chatmsgs/show">
                     <input type="hidden" id="msgBoardId" name="msgBoardId" value="<c:out value="${msgBoardId}"/>"/>
                     <input type="hidden" id="msgBoardName" name="msgBoardName" value="<c:out value="${msgBoardName}"/>"/>
                     <input type="hidden" id="page" name="page" value="0" />
